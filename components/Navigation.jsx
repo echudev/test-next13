@@ -12,9 +12,14 @@ const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-row w-full justify-center gap-10 p-4">
+    <div className="flex flex-row w-full justify-center gap-10 p-4 uppercase">
       {navLinks.map((link, i) => {
-        const isActive = pathname === link.href;
+        let isActive = Boolean;
+        if (link.href === "/users") {
+          isActive = pathname.startsWith(link.href);
+        } else {
+          isActive = pathname === link.href;
+        }
 
         return (
           <Link
