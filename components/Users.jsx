@@ -14,7 +14,7 @@ function Users({ users }) {
         router.push(`/users/${user.id}`)
       }}
       >
-        <Image width={40} height={40} alt="avatar" src={user.avatar} />
+        <Image className="cursor-pointer" width={40} height={40} alt="avatar" src={user.avatar} />
         <p>{`${user.first_name}  ${user.last_name}`}</p>
         <p>{user.email}</p>
       </li>
