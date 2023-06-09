@@ -1,10 +1,19 @@
 const ServicesPage = () => {
   return (
-    <div>
-        <h1 className="text-5xl">Contactame en</h1>
-        <p>brindamos un monton de servicios</p>
+    <div className="text-xl text-center m-20">
+      <h3>
+        Visita mi repositorio para ver más proyectos míos:
+        <a
+          className="text-orange-300"
+          href="https://github.com/echudev"
+          target="_blank"
+        >
+          {" "}
+          github.com/echudev
+        </a>
+      </h3>
     </div>
-  )
-}
+  );
+};
 
-export default ServicesPage
+export default ServicesPage;
