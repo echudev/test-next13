@@ -6,7 +6,12 @@ async function UsersPage() {
 
   return (
     <div>
-      <h1 className="text-2xl">Usuarios</h1>
+      <h3 className="text-lg text-center m-3 text-orange-300">
+        Data collected from{" "}
+        <a className="underline" href="https://reqres.in/" target="_blank">
+          ReqRes API
+        </a>
+      </h3>
       <UsersList users={users} />
     </div>
   );
