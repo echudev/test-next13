@@ -1,6 +1,6 @@
 async function HomePage() {
   return (
-    <div className="flex flex-col justify-center items-center p-10">
+    <div className="flex flex-col justify-center items-center p-10 max-w-[800px] mx-auto">
       <h1 className="text-2xl text-orange-300">Testing Next.js 13</h1>
       <p className="text-slate-300 mt-5">
         App sencilla para probar y poner en práctica funcionalidades de Next.js

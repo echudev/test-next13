@@ -6,7 +6,7 @@ function UsersList({ users }) {
   const router = useRouter();
 
   return (
-    <div className="flex justify-center flex-wrap gap-6 text-sm select-none text-violet-100">
+    <div className="flex justify-center flex-wrap gap-6 text-sm select-none text-violet-100 max-w-[800px] mx-auto">
       {users.map((user) => (
         <div
           className="flex justify-between items-center rounded-lg bg-opacity-10 bg-violet-400 min-w-[300px] min-h-[100px] p-4 hover:scale-105 hover:brightness-125 transition"
@@ -16,7 +16,7 @@ function UsersList({ users }) {
           }}
         >
           <Image
-            className="rounded-full w-fit h-fit"
+            className="rounded-full w-fit h-fit border border-orange-500"
             width={40}
             height={40}
             alt="avatar"

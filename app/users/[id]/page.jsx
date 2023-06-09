@@ -17,15 +17,15 @@ async function User() {
         alt="avatar"
         src={user.avatar}
       />
-      <div className="mt-10 text-2xl">{`${user.first_name} ${user.last_name}`}</div>
-      <div>{user.email}</div>
+      <div className="mt-10 text-2xl text-slate-300">{`${user.first_name} ${user.last_name}`}</div>
+      <div className="text-slate-300">{user.email}</div>
       <button
-        className="mt-10 bg-orange-500 text-orange-100 px-2 rounded-md m-3 h-10 w-24 hover:brightness-125 transition"
+        className="mt-10 bg-orange-500 text-orange-100 font-bold px-2 rounded-md m-3 h-10 w-24 hover:brightness-125 transition"
         onClick={() => {
           router.push(`/users/`);
         }}
       >
-        Atrás
+        Volver
       </button>
     </div>
   );

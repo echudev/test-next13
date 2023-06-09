@@ -24,7 +24,9 @@ const Navigation = () => {
         return (
           <Link
             className={
-              isActive ? "text-white transition" : "text-slate-500 transition"
+              isActive
+                ? "text-slate-300 font-bold transition"
+                : "text-slate-500 transition"
             }
             key={i}
             href={link.href}
