@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-function Users({ users }) {
+function UsersList({ users }) {
 
   const router = useRouter()
 
@@ -24,4 +24,4 @@ function Users({ users }) {
   )
 }
 
-export default Users
+export default UsersList

@@ -1,16 +1,35 @@
-import Link from 'next/link'
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const navLinks = [
+  { name: "inicio", href: "/" },
+  { name: "usuarios", href: "/users" },
+  { name: "contacto", href: "/contact" },
+];
 
 const Navigation = () => {
-  return (
-    <>
-       <h1 className="text-3xl">Navegación</h1>
-      <ul>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/about">About</Link></li>
-        <li><Link href="/servicios">Servicios</Link></li>
-      </ul>
-      </>
-  )
-}
+  const pathname = usePathname();
 
-export default Navigation
+  return (
+    <div className="flex flex-row w-full justify-center gap-10 p-4">
+      {navLinks.map((link, i) => {
+        const isActive = pathname === link.href;
+
+        return (
+          <Link
+            className={
+              isActive ? "text-white transition" : "text-slate-500 transition"
+            }
+            key={i}
+            href={link.href}
+          >
+            {link.name}
+          </Link>
+        );
+      })}
+    </div>
+  );
+};
+
+export default Navigation;
