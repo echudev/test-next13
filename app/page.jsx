@@ -14,14 +14,14 @@ async function HomePage() {
         hacer un nuevo llamado a la API en busca de más datos.
       </p>
       <p className="text-slate-300 mt-5">
-        Para hacer esta app se siguió en parte el tutorial de Fazt que puede
-        verse en el siguiente link:{" "}
+        Para conocer más a fondo Next.js y todas sus características podés
+        chusmear la documentación oficial en el siguiente link:{" "}
         <a
           className="text-orange-300"
-          href="https://www.youtube.com/watch?v=H_s-xM6Ii1g"
+          href="https://nextjs.org/docs"
           target="_blank"
         >
-          Next.js primera app
+          Nextjs.org/docs
         </a>
       </p>
     </div>
